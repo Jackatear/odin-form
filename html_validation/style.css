@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container {
+    margin-top: 40px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 40vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.part { 
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+    color: grey;
+    padding: 0 10px;
+    position: relative
+
+}
+.part:focus-within {
+    color: black;
+    letter-spacing: 1.5px;
+    transition: 0.2s;
+    width: 100%;
+    background-color: rgb(210, 210, 210);
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+input {
+    margin-bottom: 15px;
+    border: 0;
+    border-bottom: 0.5px solid grey;
+    line-height: 1.8rem;
+    padding-left: 4px;
+    letter-spacing: 1.1px;
+    transition: 0.2s;
+}
+input:focus {
+    outline: none;
+    background-color: rgb(210, 210, 210,);
+
+}
+
+#submit {
+    transition: 0.2s;
+    border: 0;
+    width: 100%;
+    height: 40px;
+}
+#submit:focus {
+    letter-spacing: 1.5px;
+    font-style: bold;
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    outline: none;
+}
+#submit:hover {
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font-style: bold;
+    background-color: black;
+    color: white;
+    border: 0;
+    transition: 0.2s;
+}
+
+.icon {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    visibility: hidden;
+}
+
+.error {
+    border: 1px dashed red;
+}
+
+.success .tick {
+    visibility: visible
+}
+
+.error .cross {
+    visibility: visible;
+}
